@@ -1,0 +1,87 @@
+/* Resetting margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in total width and height */
+}
+
+body {
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/2147834/pexels-photo-2147834.jpeg?auto=compress&cs=tinysrgb&w=600); /* Cake background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    display: flex; /* Center the form */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: 'Arial', sans-serif; /* Font style */
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center text */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Max width */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Title color */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    margin: 10px 0; /* Margin */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s; /* Transition for focus effect */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+input[type="submit"] {
+    background-color: #5cb85c; /* Green button */
+    margin:10px;
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Transition effect */
+    width: 100%; /* Full width */
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+a {
+    display: inline-block; /* Treat the anchor as a block element */
+    margin-top: 15px; /* Space above the link */
+    padding: 10px 20px; /* Padding around the text */
+    color: #ffffff; /* Text color */
+    background: linear-gradient(90deg, #6a5acd, #00bfff); /* Gradient background */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+a:hover {
+    background: linear-gradient(90deg, #5a4fcf, #0095e8); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+
